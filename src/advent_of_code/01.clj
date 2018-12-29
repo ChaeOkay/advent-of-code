@@ -9,7 +9,7 @@
   (let [converted-string (Integer/parseInt integer-string)]
     (+ accumulator converted-string)))
 
-"Calculate frequency based on input file contents"
+"Calculate frequency based on sequence of readings"
 (defn run
   [input]
     (reduce convert-and-sum 0 input))
