@@ -3,15 +3,10 @@
 
 ; Day 1: Chronical Calibration
 
-"Given a file path, returns lazy sequence of file contents by line"
-(defn read-input
-  [resource-path]
-  (-> resource-path
-      (io/resource)
-      (io/input-stream)
-      (io/reader)
-      line-seq
-      seq))
+"Given file contents, returns lazy sequence of file contents by line"
+(defn format-input
+  [input]
+  (seq (line-seq input)))
 
 "Given an integer and a string, convert string to integer and return sum"
 (defn convert-and-sum
@@ -22,5 +17,5 @@
 "Calculate frequency based on input file contents"
 (defn run
   [input]
-  (let [frequency-readings (read-input input)]
+  (let [frequency-readings (format-input input)]
     (reduce convert-and-sum 0 frequency-readings)))
