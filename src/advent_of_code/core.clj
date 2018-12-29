@@ -2,6 +2,7 @@
   (:require advent-of-code.01
             [advent-of-code.utils :as utils]))
 
+"Reads input file and returns sequence"
 (defn retreive-input-for-day
   [day]
   (let [resource-path (str "2018/" day "_input.txt")]

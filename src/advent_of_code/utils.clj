@@ -7,4 +7,6 @@
   (-> resource-path
       (io/resource)
       (io/input-stream)
-      (io/reader)))
+      (io/reader)
+      line-seq
+      seq))
