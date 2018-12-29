@@ -9,7 +9,12 @@
   (let [converted-string (Integer/parseInt integer-string)]
     (+ accumulator converted-string)))
 
+"Part 1"
+(defn part-1
+  [input]
+  (reduce convert-and-sum 0 input))
+
 "Calculate frequency based on sequence of readings"
 (defn run
   [input]
-    (reduce convert-and-sum 0 input))
+  (println (part-1 input)))

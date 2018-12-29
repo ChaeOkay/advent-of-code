@@ -13,4 +13,4 @@
   [day & args]
   (let [input (retreive-input-for-day day)
         resource-function (ns-resolve (symbol (str "advent-of-code." day)) 'run)]
-    (println (resource-function input))))
+    (resource-function input)))
