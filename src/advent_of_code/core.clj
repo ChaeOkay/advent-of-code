@@ -4,6 +4,6 @@
 (defn -main
   "Given a two digit day, runs relative code against relative input.txt"
   [day & args]
-  (let [resource-path (str "2018/" day "/input.txt")
+  (let [resource-path (str "2018/" day "_input.txt")
         resource-function (ns-resolve (symbol (str "advent-of-code." day)) 'run)]
     (println (resource-function resource-path))))
