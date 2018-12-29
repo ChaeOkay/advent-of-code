@@ -1,14 +1,8 @@
 # advent-of-code
 
-A Clojure library designed to ... well, that part is up to you.
+Command line interface to runs 2018 advent of code exercises in clojure.
 
-## Usage
-
-FIXME
-
-## License
-
-Copyright © 2018 FIXME
+`$ lein run 01`
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
